@@ -141,7 +141,8 @@ a:hover { color: #e0e7ff; }
   animation: glow 12s ease-in-out infinite;
 }
 @keyframes glow { 50% { transform: translateX(-46%) translateY(12px); opacity: 0.85; } }
-.hero-copy { position: relative; max-width: 820px; }
+.hero-copy { position: relative; max-width: none; }
+.hero .eyebrow { margin-bottom: 1.35rem; }
 .eyebrow {
   margin: 0 0 0.9rem;
   color: var(--indigo-text);
@@ -155,6 +156,13 @@ h1 {
   margin: 0 0 1.1rem;
   font-size: clamp(2.8rem, 6.4vw, 5.15rem);
   font-weight: 650;
+}
+.hero h1 {
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.45rem, 5.4vw, 4.9rem);
+  max-width: 100%;
 }
 h2 {
   margin: 0 0 0.85rem;
@@ -447,7 +455,7 @@ section { padding: 4.25rem 0; }
   }
   .nav-cta { margin: 0.4rem 0 0; justify-content: center; }
   .hero { padding-top: 2.6rem; }
-  h1 { font-size: clamp(2.45rem, 12vw, 3.3rem); }
+  .hero h1 { font-size: clamp(2.3rem, 9vw, 2.85rem); line-height: 1.1; }
   h2 { max-width: none; }
   .metric-grid { grid-template-columns: 1fr 1fr; }
 }
