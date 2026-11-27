@@ -170,6 +170,7 @@ h2 {
   font-weight: 640;
   max-width: 18ch;
 }
+#experience h2 { max-width: 18em; }
 .lede, .section-intro {
   color: var(--muted);
   font-size: 1.08rem;
@@ -178,6 +179,14 @@ h2 {
 .lede { margin: 0 0 1.5rem; }
 .lede strong, .section-intro strong, .product-card strong, .feature-copy strong { color: var(--text); font-weight: 600; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin: 0 0 1.25rem; }
+.stack-label {
+  margin: 1.2rem 0 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--indigo-text);
+}
 .btn {
   display: inline-flex;
   align-items: center;
@@ -367,6 +376,19 @@ section { padding: 4.25rem 0; }
 .meta-line { margin: 0; }
 .meta-line a { color: var(--indigo-text); }
 
+.highlights {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.highlights li {
+  margin: 0;
+  padding-left: 0.9rem;
+  border-left: 2px solid rgba(199, 210, 254, 0.45);
+  color: var(--muted);
+}
 .timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
 .timeline h3 { margin: 0.15rem 0 0.3rem; font-size: 1.2rem; font-weight: 630; }
 .where { margin: 0 0 0.55rem; }
